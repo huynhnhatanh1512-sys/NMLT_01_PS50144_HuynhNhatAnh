@@ -1,19 +1,30 @@
 #include <stdio.h>
-const float PI = 3.14159;
 
-int main(){
+const float PI = 3.14159f;
+
+int main() {
     float dai, rong, r;
+
+    printf(" TINH CHU VI & DIEN TICH HCN \n");
     printf("Nhap chieu dai: ");
-    scanf("%f",&dai);
+    scanf("%f", &dai);
     printf("Nhap chieu rong: ");
-    scanf("%f",&rong);
+    scanf("%f", &rong);
 
+    printf("\n[Thong tin HCN]\n");
+    printf("Chieu dai: %.2f\n", dai);
+    printf("Chieu rong: %.2f\n", rong);
+    printf("Chu vi: %.2f\n", (dai + rong) * 2);
+    printf("Dien tich: %.2f\n", dai * rong);
 
-    printf("Chieu dai: %.2f\nChieu rong: %.2f\nChu vi HCN: %.2f\nDien tich HCN: %.2f\n",
-        dai,rong,(dai + rong)*2,dai*rong);
+    printf("\n--- TINH CHU VI & DIEN TICH HINH TRON ---\n");
     printf("Nhap ban kinh: ");
-    scanf("%f",&r);
-    printf("\nThong tin hinh tron:\nBan kinh: %.2f\nChu vi: %.2f\nDien tich: %.2f\n",r,r*2*PI,r*r*PI);
+    scanf("%f", &r);
+
+    printf("\n[Thong tin Hinh Tron]\n");
+    printf("Ban kinh: %.2f\n", r);
+    printf("Chu vi: %.2f\n", 2 * r * PI);
+    printf("Dien tich: %.2f\n", r * r * PI);
 
     return 0;
 }

@@ -8,7 +8,7 @@ int main() {
     printf("Nhap MSSV: ");
     scanf("%s", mssv);
 
-    printf("Nhap Ho va Ten (vi du: Nguyen Anh): ");
+    printf("Nhap Ho va Ten: ");
     scanf("%s %s", ho, ten);
 
     printf("Nhap diem Toan, Ly, Hoa: ");

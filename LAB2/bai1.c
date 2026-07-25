@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-const float PI = 3.14159f;
+const float PI = 3.14159f; // sài const thay vì #define để khai báo và tránh lỗi khi biên dịch
 
 int main() {
     float dai, rong, r;
@@ -17,7 +17,7 @@ int main() {
     printf("Chu vi: %.2f\n", (dai + rong) * 2);
     printf("Dien tich: %.2f\n", dai * rong);
 
-    printf("\n--- TINH CHU VI & DIEN TICH HINH TRON ---\n");
+    printf("\n TINH CHU VI & DIEN TICH HINH TRON \n");
     printf("Nhap ban kinh: ");
     scanf("%f", &r);
 
